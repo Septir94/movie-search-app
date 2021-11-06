@@ -14,7 +14,6 @@ export default function Header() {
       keyword: keyword,
       page: 1,
       type: type,
-      year: 2020,
     };
     dispatch(fetchMovieAction.getMovieByType(request));
   };
@@ -33,14 +32,18 @@ export default function Header() {
           </label>
           <label
             onClick={() => {
-              onChangeType("shounen", "series");
+              onChangeType("boku", "series");
             }}
           >
             Anime
           </label>
-          <label onClick={() => {
-              onChangeType("First", "Movie");
-            }} >Action</label>
+          <label
+            onClick={() => {
+              onChangeType("hero", "Movie");
+            }}
+          >
+            Action
+          </label>
         </div>
       </div>
     </div>

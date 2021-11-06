@@ -20,7 +20,7 @@ export const fetchMovieService = {
     const response = await Axios({
       url:
         process.env.REACT_APP_BASE_URL +
-        `s=${request.keyword}&page=${request.page}&y=${request.year}&type=${request.type}`,
+        `s=${request.keyword}&page=${request.page}&type=${request.type}`,
       method: "GET",
       responseType: "json",
     });
