@@ -1,0 +1,25 @@
+.list-movie-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: wheat;
+    margin: 5em 2em;
+    padding-left: 1.3em;
+}
+.list-movie-outer-container{
+    width: 100%;
+    position: relative;
+    
+}
+.list-movie-outer-container .label{
+    color: #282828;
+    font-weight: bold;
+    position: absolute;
+    text-align: left;
+    left: 3em;
+    padding-top: 1em;
+    font-size: 1.3em;
+    z-index: 888;
+    width: 91%;
+    padding-bottom: .3em;
+    border-bottom:solid 1px #282828;
+}

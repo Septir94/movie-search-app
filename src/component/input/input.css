@@ -1,0 +1,39 @@
+.pseudo-search {
+  display: inline;
+  border: 2px solid #FF0000;
+  border-radius: 10px;
+  padding: 5px 25px;
+  transition: background-color 0.5 ease-in-out;
+  position: relative;
+}
+.pseudo-search input {
+  border: 0;
+  background-color: transparent;
+  width: 20em;
+  color: wheat;
+}
+.pseudo-search input:focus {
+  outline: none;
+}
+.pseudo-search input::placeholder{
+    color: wheat;
+}
+.pseudo-search button,
+i {
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 3em;
+  height: 2.6em;
+  background-color: #FF0000;
+  position: absolute;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  top: -.1em;
+  right: -.1em;
+}
+@media  screen and (max-width: 709px){
+    .pseudo-search input{
+        width: 10em;
+    }
+}
