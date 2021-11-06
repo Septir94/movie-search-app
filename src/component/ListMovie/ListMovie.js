@@ -14,15 +14,17 @@ export default function ListMovie() {
         {state.data.length === 0
           ? state.data
           : state.data.Search.map((movie, index) => {
-              return (
-                <CardMovie
-                  setIsOpen={() => {
-                    setIsOpen({ isOpen: true, url: movie.imdbID });
-                  }}
-                  key={index}
-                  movie={movie}
-                />
-              );
+              if (movie.Poster !== "N/A") {
+                return (
+                  <CardMovie
+                    setIsOpen={() => {
+                      setIsOpen({ isOpen: true, url: movie.imdbID });
+                    }}
+                    key={index}
+                    movie={movie}
+                  />
+                );
+              }
             })}
       </div>
       <Modal

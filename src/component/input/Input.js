@@ -15,7 +15,14 @@ export default function Input({ onChangeHandler }) {
         type="text"
         placeholder="Search movie.."
       />
-      <button onClick={()=>{onChangeHandler(value)}} className="fa fa-search" type="submit">
+      <button
+        onClick={() => {
+          onChangeHandler(value);
+          setValue("");
+        }}
+        className="fa fa-search"
+        type="submit"
+      >
         <FontAwesomeIcon color="wheat" icon={faSearch} />
       </button>
     </div>
